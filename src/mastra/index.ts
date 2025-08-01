@@ -7,8 +7,8 @@ import { pdfAgent } from './agents/pdf-agent';
 export const mastra = new Mastra({
   agents: { pdfAgent },
   storage: new LibSQLStore({
-    // stores telemetry, evals, ... into memory storage, if it needs to persist, change to file:../mastra.db
-    url: ":memory:",
+    // stores telemetry, evals, ... into file storage for persistence
+    url: "file:./mastra.db",
   }),
   logger: new PinoLogger({
     name: 'Mastra',
