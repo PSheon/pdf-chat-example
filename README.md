@@ -1,6 +1,6 @@
 # pdf-chat
 
-Simple PDF chatbot using Mastra
+Simple PDF chatbot
 
 ## Setup
 
