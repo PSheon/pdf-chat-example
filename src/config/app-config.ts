@@ -37,7 +37,7 @@ export const defaultConfig: AppConfig = {
   },
 
   agent: {
-    model: "gemini-2.0-flash-exp",
+    model: "gemini-2.5-flash",
     maxTokens: 4096,
     temperature: 0.1,
     systemPrompt: `

@@ -9,7 +9,10 @@ async function runPDFChat() {
   try {
     // 載入 PDF 文件
     console.log("🚀 開始載入 PDF 文件...");
-    const pdfPath = path.resolve("./pdf-storage/Hamlet.pdf");
+    // const pdfPath = path.resolve("./pdf-storage/Hamlet.pdf");
+    const pdfPath = path.resolve(
+      "./pdf-storage/2025 atZone User Manual_241213.pdf"
+    );
     const document = await pdfManager.loadPDF(pdfPath);
 
     console.log("📚 文件載入完成:");
@@ -24,11 +27,12 @@ async function runPDFChat() {
 
     // 定義問題列表
     const questions = [
-      "這部戲叫什麼名字？請提供詳細的背景資訊。",
-      "哈姆雷特的主要角色有哪些？請描述他們的關係。",
-      "這部劇的主要衝突是什麼？",
-      "請分析哈姆雷特這個角色的心理狀態。",
-      "這部劇中有哪些著名的獨白片段？",
+      // "這部戲叫什麼名字？請提供詳細的背景資訊。",
+      // "哈姆雷特的主要角色有哪些？請描述他們的關係。",
+      // "這部劇的主要衝突是什麼？",
+      // "請分析哈姆雷特這個角色的心理狀態。",
+      // "這部劇中有哪些著名的獨白片段？",
+      "如何下載@Zone App?",
     ];
 
     // 逐一處理問題

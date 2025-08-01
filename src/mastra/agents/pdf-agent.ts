@@ -26,7 +26,7 @@ export const pdfAgent = new Agent({
     - 當用戶詢問特定概念時，解釋並提供相關上下文
     - 支援比較分析和深度討論
   `,
-  model: google("gemini-2.0-flash-exp"),
+  model: google("gemini-2.5-flash"),
   memory: new Memory({
     storage: new LibSQLStore({
       url: "file:./mastra.db",
